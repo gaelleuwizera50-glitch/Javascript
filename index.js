@@ -78,7 +78,14 @@ let value1 = Symbol("program");
 let value2 = Symbol("program");
 console.log(value1===value2);
 
-
+let a = 5;
+let b = 3;
+console.log(a+b); 
+console.log(a-b); 
+console.log(a^b);       
+console.log(a/b); 
+console.log(a%b); 
+console.log(a**b); 
 
 // 8. Objects is the only non-primitive data type: 
 // In contrast, objects are used to store keyed collections of various data and more complex entities
@@ -92,3 +99,87 @@ const student = {
 console.log(student);
 console.log(typeof student);
 
+
+// Conditionals in JS
+// If statement
+// definition of if statement
+let condition=true;
+let condition1=false;
+let condition2=false;
+
+
+if(condition) {
+    // code to be executed if condition is true
+}
+
+// If else statement (true ) false-else
+// definition of if else statement
+if (condition1) {
+    
+    // code to be executed if conditional is true 
+} else if (condition2) {
+    // code to be executed if condition2 is true
+    
+} else{
+    // code to be executed if both condition1 and condition2 are false
+}
+ 
+// Practice examples
+let score =50
+
+    if(score>69){
+        console.log("Very good, you have passed the exam")
+    } 
+    if(score>= 70){
+        console.log ("You have passed the exam")
+    } else {
+        console.log("You have failed the exam")
+    }
+
+    // Comparison operators
+    // 1. Equal to (==)
+    // 2.  Not Equal to (!=)
+    // 3. Strict Equal to (===)
+    // 4. Strict not Equal to (!==)
+    // 5. Greater than (>)
+    // 6. Less than (<)
+    // 7. Greater than or Equal to (>=)
+    // 8. less than or Equal to (<=)
+
+
+    // Arrays: Its a data structure and it holds multiple data at once
+    ["volvo", "benz", "kia", "toyota"]
+    [1,2,3,4,5]
+
+    let cars=  ["Volvo", "Benz", "Kia", "Toyota"];
+    console.log(cars);
+    console.log(cars[0]);
+
+    // Mixed array
+    let mixedArray = ["Gaelle", "23", "45", "Star", "78", "Watashi"];
+    console.log(mixedArray);
+    console.log(mixedArray[5]);
+    
+    
+    // Objects
+    // An empty object {}
+    let person = {
+
+        name: "Gaelle",
+        age: 40,
+        district: "Kampala",
+        student: true,
+        hobbies: ["eating", "sleeping"],
+        address: {
+            street: "123 Main St",
+            city: "Kampala",
+            country: "Uganda",
+        }
+
+    }
+    console.log(person);
+     console.log(person["name"]);
+    //  Accessing the name property
+     console.log(person.hobbies);
+     console.log(person.hobbies[0]);
+    //  Accessing the second hobby
