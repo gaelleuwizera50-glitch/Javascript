@@ -204,3 +204,11 @@ const studentScore = 58;
 const studentGrade = calculateGrade(studentScore);
 console.log(`Student score: ${studentScore}`);
 console.log(`Student grade: ${studentGrade}`);
+
+
+// Concatenation in JavaScript is the process of joining two or more strings into a single string.
+
+let greetings = "Hello";
+let subject = "World";
+let fullGreeting = greetings.concat(", ", subject, "!");
+console.log(fullGreeting); 
