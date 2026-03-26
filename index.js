@@ -183,3 +183,24 @@ let score =50
      console.log(person.hobbies);
      console.log(person.hobbies[0]);
     //  Accessing the second hobby
+
+
+    function calculateGrade(score) {
+  if (score >= 90) {
+    return 'A';
+  } else if (score >= 80) {
+    return 'B';
+  } else if (score >= 70) {
+    return 'C';
+  } else if (score >= 60) {
+    return 'D';
+  } else {
+    return 'F';
+  }
+}
+
+// Example
+const studentScore = 58;
+const studentGrade = calculateGrade(studentScore);
+console.log(`Student score: ${studentScore}`);
+console.log(`Student grade: ${studentGrade}`);
