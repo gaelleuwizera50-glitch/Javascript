@@ -186,21 +186,29 @@ let score =50
 
 
     function calculateGrade(score) {
-  if (score >= 90) {
+  if (score >= 80) {
     return 'A';
-  } else if (score >= 80) {
-    return 'B';
+  } else if (score >= 75) {
+    return 'B+';
   } else if (score >= 70) {
+    return 'B';
+  } else if (score >= 65) {
     return 'C';
-  } else if (score >= 60) {
-    return 'D';
-  } else {
-    return 'F';
+     } else if (score >= 60) {
+    return 'C+';
   }
+   else if (score >=55) {
+    return 'D+';
+   } else if (score >= 50) {
+    return 'D';
+  }
+   else {
+    return 'F';
+   }
 }
 
 // Example
-const studentScore = 58;
+const studentScore = 74;
 const studentGrade = calculateGrade(studentScore);
 console.log(`Student score: ${studentScore}`);
 console.log(`Student grade: ${studentGrade}`);
@@ -211,4 +219,78 @@ console.log(`Student grade: ${studentGrade}`);
 let greetings = "Hello";
 let subject = "World";
 let fullGreeting = greetings.concat(", ", subject, "!");
-console.log(fullGreeting); 
+console.log(fullGreeting);
+
+// Today's class : Loops
+// In JavaScript, a loop is a way to run a block of code repeatedly until a specific condition is no longer true. Loops save you from writing the same code over and over for repetitive tasks, such as processing items in a list or performing a calculation multiple times
+// An array called scores containing objects with each object having a name and score properties
+
+let scores = [
+    {name: "Annet", score: 85},
+    {name: "Justine", score: 63},
+    {name : "Samuel", score: 75},
+    {name : "Martin", score: 57},
+    {name : "Resty", score: 39},
+    {name : "Liz", score: 75}
+];
+scores.forEach(student=>{
+    let grade;
+    if(student.score >= 90) {
+        grade= "A"
+    } else if (student.score >= 80){
+        grade="B"
+}
+else if (student.score >= 70){
+        grade="C"
+}
+else if (student.score >= 60){
+        grade="D"
+}
+else if (student.score >= 50){
+        grade="E"
+}
+else{
+    grade="F"
+}
+
+console.log(student.name +":"+ student.score +":"+ grade)
+}
+)
+
+// Functions: Are reusable blocks of code that perform a specific task. They take parameters and return variables.
+// Function declaration: We use the fn keyword to declare a fn
+function functionName(){
+    // code to be executed
+}
+
+function funcName(parameter){
+   // code to be executed
+   return parameter;  
+    // returning parameter 
+}
+
+function funcWithParameters( parameter1, parameter2, parameter3) {
+    // code to  be executed
+    return parameter1 + parameter2 + parameter3;
+    // returning the sum of the parameters
+}
+// Working example of a function 
+function returnSomeValue(){
+    let value = "This is my first function in JavaScript";
+    console.log(value);
+}
+returnSomeValue(); 
+// This is how you call a function to execute the code inside it
+
+function returnParameter(parameter) {
+    return parameter;
+}
+// console.log (returnParameter{Hello. This is my second fn in Js});
+const result = returnParameter ("Hello, this is my second function in JavaScript");
+console.log(result);
+
+function addNumbers (x,y){
+    return x + y;
+}
+const sum = addNumbers (4, 5);
+console.log (sum);
