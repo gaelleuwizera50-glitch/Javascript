@@ -294,3 +294,49 @@ function addNumbers (x,y){
 }
 const sum = addNumbers (4, 5);
 console.log (sum);
+
+
+// Loops: Loops in JavaScript are used to execute a block of code repeatedly until a specific condition is no longer met.
+// Loops offer a quick and easy way to do something repeatedly.
+
+// 1. For loop: The for loop
+// A for loop has three main parts:
+// Initialization: Sets up a counter variable (e.g., let i = 0). This runs only once at the beginning.
+// Condition: A condition that is checked before each iteration. If it's true, the loop continues; if false, the loop ends.
+// Update: An expression to increment or decrement the counter after each iteration (e.g., i++).
+
+// Example
+
+for (let i= 0; i < 7; i++) {
+    console.log (i);
+}
+
+
+
+// 2. While Loop: Repeats a block of code as long as a specified condition remains true. Use this when you don't know the exact number of iterations beforehand, for example, waiting for a user to type 'yes'
+
+let count = 0;
+while (count < 3) {
+  console.log("Count is: " + count);
+  count++;
+}
+
+
+// 3. Do while Loop: Similar to a while loop, but it guarantees the code block runs at least once before checking the condition.
+let i=0;
+do
+   {
+    i += 1;
+    console.log(i);
+   }
+while (i<5);
+
+
+
+// 4. For of Loop: A simpler way to iterate over the values of iterable objects like arrays or strings.
+
+const fruits = ["Apple", "Banana", "Cherry"];
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+
