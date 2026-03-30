@@ -310,6 +310,35 @@ console.log (sum);
 for (let i= 0; i < 7; i++) {
     console.log (i);
 }
+for(let i=7; i>0; i--){
+    console.log(i)
+}
+
+
+const myCars=["Volvo", "Benz", "Kia", "Toyota"];
+console.log(myCars);
+const numberofCars = myCars.length;
+console.log(numberofCars);
+const KiaPosition = myCars.indexOf("Kia");
+console.log("The position of Kia in the array is", KiaPosition);
+
+for(let i=0; i< myCars.length; i++){
+    console.log(myCars[i]);
+}
+
+for (let car of myCars){
+function printCarPosition(car){
+    const index = myCars.indexOf(car);
+console.log ("The position of " + car + " in the array is " + index);
+}
+ printCarPosition(car);
+ console.log(car);   
+
+
+}
+
+
+
 
 
 
@@ -321,6 +350,21 @@ while (count < 3) {
   count++;
 }
 
+let id = 0;
+while ( id< 7){
+    console.log("From the while loop", id);
+    id++;
+}
+let p = 7;
+while ( p > 0){
+    console.log("From the second while loop", p);
+    p--;
+}
+
+let password = "";
+while (password !== "1234"){
+    password = prompt ("Please enter the correct password");
+}
 
 // 3. Do while Loop: Similar to a while loop, but it guarantees the code block runs at least once before checking the condition.
 let i=0;
@@ -340,3 +384,4 @@ for (const fruit of fruits) {
   console.log(fruit);
 }
 
+// DOM
