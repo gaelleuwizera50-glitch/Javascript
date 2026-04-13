@@ -130,6 +130,7 @@ let score =50
     if(score>69){
         console.log("Very good, you have passed the exam")
     } 
+
     if(score>= 70){
         console.log ("You have passed the exam")
     } else {
@@ -210,15 +211,20 @@ let score =50
 // Example
 const studentScore = 74;
 const studentGrade = calculateGrade(studentScore);
-console.log(`Student score: ${studentScore}`);
+
+
+console.log(`Student score: `,studentScore);
 console.log(`Student grade: ${studentGrade}`);
+const xr= `Student grade: ${studentGrade}`;
 
 
 // Concatenation in JavaScript is the process of joining two or more strings into a single string.
 
 let greetings = "Hello";
 let subject = "World";
-let fullGreeting = greetings.concat(", ", subject, "!");
+let space = ", ";
+let exclamation = "!";
+let fullGreeting = greetings.concat(space, subject,exclamation );
 console.log(fullGreeting);
 
 // Today's class : Loops
@@ -233,6 +239,8 @@ let scores = [
     {name : "Resty", score: 39},
     {name : "Liz", score: 75}
 ];
+scores[2].score;
+
 scores.forEach(student=>{
     let grade;
     if(student.score >= 90) {
@@ -384,4 +392,57 @@ for (const fruit of fruits) {
   console.log(fruit);
 }
 
-// DOM
+// Arrow functions: They're are simple ways to write functions in Js
+// They are used for Simple, short  fn
+
+// Traditional function expression
+const traditionalFunction = function(){
+    console.log("This is a traditional function");
+}
+traditionalFunction();
+
+
+function anotherTraditionalFunction (){
+    console.log("Thisis another traditional function");
+}
+anotherTraditionalFunction();
+
+// Arrow function expression
+const arrowFunc = () => {
+    console.log ("This is an arrow function");
+}
+arrowFunc ();
+const add = ( a,b) => {
+    console.log (a + b);
+}
+add(3,4)
+
+
+// JSON means JavaScript Object Notation
+// Javascript Object
+const task = {
+    id:1,
+    title: "Complete Javascript assignment",
+    completed:false
+}
+console.log(task);
+
+// JSON string
+const taskJSON = JSON.stringify(task);
+console.log(taskJSON);
+
+// Persing JSON string back to JavaScript object
+const persedTask = JSON.parse(taskJSON);
+console.log(persedTask);
+
+// Local storage
+// Storing data in local storage
+localStorage.setItem("Name", "Uwizera Gaelle");
+localStorage.setItem("task", "taskJSON");
+
+// Retrieving data from local storage
+const nameFromStorage = localStorage.getItem("Name");
+console.log("Name from local storage:", nameFromStorage);
+
+const taskFromStorage = localStorage.getItem("task")
+console.log(taskFromStorage);
